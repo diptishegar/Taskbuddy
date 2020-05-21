@@ -1,0 +1,35 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}
+    <title>Index- Taskbuddy</title>
+{% endblock title %}
+
+{% block content %}
+    <div class="container">
+        <div class="row mt-5">
+            <div class="col-lg-4">
+                <img src="{% static 'image/stn.jpg' %}" alt="but, smartly" class="shadow-lg mb-5 rounded-lg" width="360" height="250">
+            </div>
+            <div class="col-lg-4">
+                <img src="{% static 'image/hands.jpg' %}" alt="but, smartly" class="shadow-lg mb-5 rounded-lg" width="360" height="250">
+            </div>
+            <div class="col-lg-4">
+                <img src="{% static 'image/idea.jpg' %}" alt="but, smartly" class="shadow-lg mb-5 rounded-lg" width="360" height="250">
+            </div>
+        </div>
+        <div class="row mt-1">
+            <div class="col-md-10 offset-md-1">
+                <center><p class="h1 text-warning">There are moments in our lives that seems to define us</p></center>
+                <center><p class="h3 mt-3 col-md-8 offset-md-1">Plan those moments, schedule each task in your routine and get the best version of you</p></center>
+                <center><p class="h3 mt-3">Only with our website-TASKBUDDY</p></center>
+                <center><p class="h6">It will help you in sorting your pending and completed tasks and work to do. Register quickly and create your own Todolist.</p></center>
+
+                <center><a href="{% url 'todolist' %}"><button type="button" class="btn btn-primary btn-lg mt-3 col-md-4 offset-md-4shadow-lg p-3 ">Let's Get Started</button></a></center>
+                <center><p class="h6 mb-5">New User? <a href="{% url 'register' %}" class="text-white">Register here</a></p></center>
+            </div>
+        </div>
+
+    </div>
+      
+{% endblock content %}
