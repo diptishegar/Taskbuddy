@@ -1,1 +1,1 @@
-web: gunicorn Taskbuddy.wsgi
+web: gunicorn taskbuddy.wsgi
