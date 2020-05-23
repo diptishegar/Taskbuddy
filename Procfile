@@ -1,1 +1,1 @@
-web: gunicorn taskbuddy.wsgi
+web: gunicorn taskbuddy.wsgi --log-file -
