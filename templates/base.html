@@ -13,8 +13,8 @@ red meta tags -->
     {% block title %}
     {% endblock title %}
 
-  
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    {% block navbar %}
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <a class="navbar-brand" href="{% url 'index' %}"><img src="{% static 'image/dips.jpg' %}" alt="Taskbuddy" class="rounded-circle" height="55" width="55">    TaskBuddy</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -23,9 +23,12 @@ red meta tags -->
           <div class="navbar-nav">
             <a class="nav-item nav-link active ml-5" href="{% url 'index' %}">Home</a>
             <a class="nav-item nav-link active ml-2" href="{% url 'todolist' %}">Todolist</a>
-            <a class="nav-item nav-link active ml-2" href="{% url 'contact' %}">Contacts</a>
             <a class="nav-item nav-link active ml-1" href="{% url 'about' %}">About Us</a>
-          </div>
+            <a class="nav-item nav-link active ml-2" href="{% url 'contact' %}">Contacts Us</a>
+            {% if user.is_authenticated %}
+              <a class="nav-item nav-link active ml-1 text-white" href="{% url 'change-password' %}">Change Password</a> 
+            {% endif %}
+            </div>
         </div>
         {% if user.is_authenticated %}
         <div class="form-inline my-2 my-lg-0">
@@ -44,6 +47,7 @@ red meta tags -->
         {% endif %}
 
       </nav>
+      {% endblock navbar %}
       {% block style %}
         
       {% endblock style %}
