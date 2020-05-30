@@ -1,8 +1,21 @@
 {% extends "base.html" %}
 
+{% load static %}
+
 {% block title %}
     <title>Edit Task- Taskbuddy</title>
 {% endblock title %}
+
+
+{% block styles %}
+    <style>
+        body{
+            background: url('{% static 'image/contacts.jpeg' %}') no-repeat center fixed;
+            background-size: cover;
+
+        } 
+    </style>  
+{% endblock styles %}
 
 {% block content %}
     <div class="container">
@@ -10,10 +23,10 @@
         {% if task_dip.owner == request.user %}
             <form method="POST" class="row">
                 {% csrf_token %}
-                <label class="col-lg-4">Update Task</label>
-                <input type="text" class="form-control col-lg-6" name="task" placeholder="{{ task_dip.task }}", value="{{ task_dip.task }}">
+                <label class="h3 col-sm-2 text-dark">Update Task</label>
+                <input type="text" class="form-control col-sm-7" name="task" placeholder="{{ task_dip.task }}", value="{{ task_dip.task }}">
                 <input type="hidden" name="done"  value="{{ task_dip.done }}">
-                <button type="submit" class="btn btn-primary col-lg-2">Update Task</button>
+                <button type="submit" class="btn btn-primary col-lg-2 ml-2">Update Task</button>
             </form>
         {% else %}
             <p>Access not allowed</p>

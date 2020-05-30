@@ -1,19 +1,113 @@
 {% extends 'base.html' %}
-
+{% load static %}
 {% block title %}
     <title>Contacts- Taskbuddy</title>
 {% endblock title %}
 
-{% block content %}
-    <div class="container mt-5">
-      <div class="container">
-        <p>Call us (For any Query): 1234567890/1023456789</p>
-        <p>Follow us on-</p>
-        <p>Instagram :</p>
-        <p>Facebook :</p>
-        <p>Twitter :</p>
+{% block styles %}
+    <style>
+        body{
+            background: url('{% static 'image/contacts.jpeg' %}') no-repeat center fixed;
+            background-size: cover;
 
-      </div>
+        } 
+    </style>  
+{% endblock styles %}
+
+{% block content %} 
+    <div class="bg-light rounded mt-3 shadow p-2">
+        <h3 class="col-md-5 offset-md-2 text-dark">We'd Love To Hear From You</h3>
+        
+    </div>
+    <br>
+    <br>
+    <div class="row">
+        <div class="col col-6 shadow">
+            <p class="text-center mt-2 mr-5">
+                <hr>
+            <h1 class="text-dark">Have any questions or suggestions??</h1>
+            <hr>
+            <h4 class="text-dark">TaskBuddy team is here to help you.</h4><br>
+            <h6 class="text-secondary">
+            Please drop your queries or suggestions on our given social media accounts. We are eager to know your experience with TaskBuddy</h6>
+            </p>
+        </div>
+        <div class="accordion col col-5 mr-5 shadow p-2" id="accordionExample">
+            <div class="card bg-dark text-dark">
+                <div class="card-header" id="headingOne">
+                    <h2 class="mb-0">
+                        <button class="btn btn-block text-left text-warning collapsed" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                           Call Us
+                        </button>
+                    </h2>
+                </div>
+
+                <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+                    <div class="card-body bg-secondary text-white">
+                          9130778787/9156386062
+                    </div>
+                </div>
+            </div>
+            <div class="card bg-dark">
+                <div class="card-header bg-dark text-dark" id="headingTwo">
+                    <h2 class="mb-0">
+                        <button class="btn btn-block text-left text-warning collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                           Email Address
+                        </button>
+                    </h2>
+                </div>
+                <div id="collapseTwo" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
+                    <div class="card-body bg-secondary text-white">
+                           taskbuddy@gmail.com
+                    </div>
+                </div>
+            </div>
+            <div class="card bg-dark">
+                <div class="card-header id="headingThree>
+                    <h2 class="mb-0">
+                        <button class="btn btn-block text-left text-warning collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                             Instagram
+                        </button>
+                    </h2>
+                </div>
+                <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+                    <div class="card-body bg-secondary text-white">
+                          Taskbuddyapp_13
+                    </div>
+                </div>
+            </div>
+            <div class="card bg-dark">
+                <div class="card-header bg-dark text-dark" id="headingFour">
+                    <h2 class="mb-0">
+                        <button class="btn btn-block text-left text-warning collapsed" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                          Twitter
+                        </button>
+                    </h2>
+                </div>
+                <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordionExample">
+                    <div class="card-body bg-secondary text-white">
+                      Taskbuddy_official
+                    </div>
+                </div>
+            </div>
+            <div class="card bg-dark">
+                <div class="card-header bg-dark text-dark" id="headingFive">
+                    <h2 class="mb-0">
+                        <button class="btn btn-block text-left text-warning collapsed" type="button" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                         FaceBook
+                        </button>
+                    </h2>
+                </div>
+                <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordionExample">
+                    <div class="card-body bg-secondary text-white">
+                        www.facebook.com/taskbuddyapp_13
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div><hr>
+    <div class="h6 text-dark mt-5 ml-4 mr-4 ">
+        <p><footer>Copyright&copy 2020 Dipti&Purva All rights reserved</footer></p>
     </div>
       
 {% endblock content %}

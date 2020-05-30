@@ -1,30 +1,81 @@
 {% extends 'base.html' %}
 
+{% load static %}
+
 {% block title %}
     <title>About Us- Taskbuddy</title>
 {% endblock title %}
-
-{% block style %}
+ 
+{% block styles %}
     <style>
-        ul{
-            font-family: 'Courier New', Courier, monospace;
-            font-size: larger;
-           
-            
-        }
+        body{
+            background: url('{% static 'image/about.jpeg' %}') no-repeat center fixed;
+            background-size: cover;
+
+        } 
     </style>  
-{% endblock style %}
+{% endblock styles %}
 
 {% block content %}
-    <div class="container">
-        <div class="mt-2 ml-2 p-1">
-            <ul style="list-style-type:circle">
-                <li>TaskBuddy brings up something to the people, through which they could create their own Todolist.</li> 
-                <li>This application highlights the work which is pending. Hence this helps the user to differentiate between completed and Pending works(tasks).</li>
-                <li>A great initiative was taken to make this application more accessible and Safe.</li>
-                <li>Brought to you by -Dipti Shegar</li>
-            </ul>
-         </div>
+    <div class="bg-light rounded mt-2 mb-3 p-5">
+        
+        <center><strong><h1 class="text-warning">About Us</h1></strong></center><hr>
+        <center><h5 class="text-secondary mt-3 mb-4 ml-5 mr-5">We would love to share something about us to let the admirers of our TaskBuddy application know our background and the feelings we have towards each aspects our lives and society</h5></center>
     </div>
+    <div class="row ">
+        <div class="row mt-4 col-md-8">
+            <div class="col-sm-5">
+                <h2 class="text-dark">Our Mission</h2><hr size="40">
+                <center><h6 class="text-light">Our goal is to deliver a product which is simple, attractive and convenient. TaskBuddy is beneficial to users of all age groups.</h6></center>
+            </div>
+            <div class="col-sm-5">
+                <h2 class="text-dark">Our Request</h2><hr>
+                <center><h6>We Hope you will love TaskBuddy. If you find any flaws in this aplication please contact us. We from our side are also trying to update 
+                TaskBuddy, to make it more beneficial.</h6></center>
+                
+            </div>
+            <div class="col-sm-5">
+                <h2 class="text-dark">Our Motive</h2><hr>
+                <center><h6>It's our sincere assumption that this application will meet the aims we've set for it. And it will benefit maximum number of people.</h6></center>
+                
+            </div>
+            <div class="col-sm-5">
+                <h2 class="text-dark">Our Gratitude</h2><hr>
+                <center><h6>We express our gratitude towards the Extremely Gracious, Holy and Almighty God. He guided us throughout our project, to meet our goals. We also are grateful to our elders, who taught us the best ethics and values.</h6></center>
+            </div>
+            
+            <div class="col-sm-5">
+                <h2 class="text-dark">Our History</h2><hr>
+                <center><h6>We're excited to build our history because this is our very first project. Hope you all love it and give as much as love and support you can.</h6></center>
+            </div>
+        </div>
+        <div class="col col-sm-4 mt-4 ">
+            <div id="carouselExampleInterval" class="carousel slide " data-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active" data-interval="10000">
+                        <img src="{% static 'image/q11.jpg' %}" class="d-block w-100" height="300" width="500" alt="make">
+                    </div>
+                    <div class="carousel-item " data-interval="10000">
+                        <img src="{% static 'image/q33.jpg' %}" class="d-block w-100" height="300" width="500"  alt="a">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="{% static 'image/q2.png' %}" class="d-block w-100" height="300" width="500" alt="todolist">
+                    </div>
+                </div>
+                <a class="carousel-control-prev" href="#carouselExampleInterval" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleInterval" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="h6 text-dark mt-4 ml-4 mr-4 ">
+        <p><footer>Copyright&copy 2020 Dipti&Purva All rights reserved</footer></p>
+    </div>
+    
       
 {% endblock content %}

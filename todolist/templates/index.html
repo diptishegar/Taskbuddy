@@ -7,29 +7,30 @@
 
 {% block content %}
     <div class="container">
-        <div class="row mt-5">
-            <div class="col-lg-4">
-                <img src="{% static 'image/stn.jpg' %}" alt="but, smartly" class="shadow-lg mb-5 rounded-lg" width="360" height="250">
-            </div>
-            <div class="col-lg-4">
-                <img src="{% static 'image/hands.jpg' %}" alt="but, smartly" class="shadow-lg mb-5 rounded-lg" width="360" height="250">
-            </div>
-            <div class="col-lg-4">
-                <img src="{% static 'image/idea.jpg' %}" alt="but, smartly" class="shadow-lg mb-5 rounded-lg" width="360" height="250">
-            </div>
-        </div>
-        <div class="row mt-1">
-            <div class="col-md-10 offset-md-1">
-                <center><p class="h1 text-warning">There are moments in our lives that seems to define us</p></center>
-                <center><p class="h3 mt-3 col-md-8 offset-md-1">Plan those moments, schedule each task in your routine and get the best version of you</p></center>
-                <center><p class="h3 mt-3">Only with our website-TASKBUDDY</p></center>
-                <center><p class="h6">It will help you in sorting your pending and completed tasks and work to do. Register quickly and create your own Todolist.</p></center>
-
-                <center><a href="{% url 'todolist' %}"><button type="button" class="btn btn-primary btn-lg mt-3 col-md-4 offset-md-4shadow-lg p-3 ">Let's Get Started</button></a></center>
-                <center><p class="h6 mb-5">New User? <a href="{% url 'register' %}" class="text-white">Register here</a></p></center>
+        <div  class="row mt-1">
+            <div class="col-sm-12">
+                <div class="shadow p-2 mt-3 p-4 bg-secondary rounded">
+            
+                    <center><h1 class="text-warning">There are moments in our lives that seems to define us</h1></center>
+                    <hr><hr>
+                    <center><h4 class="mt-3 col-7 text-dark">Plan those moments, schedule each task in your routine and get the best version of you</h4></center>
+                    <hr>
+                </div>
             </div>
         </div>
+        <hr>
+        
+        <center><p class="h5 mt-5 p-4 text-dark bg-light shadow rounded col-sm-5 offset-md-0">Only with our website-TASKBUDDY</p></center>
+        <center><p class="h6 bg-light text-secondary shadow col-sm-12 p-3">It will help you in sorting your pending and completed tasks and work to do. Register quickly and create your own Todolist.</p></center>
+        <center class="col-sm-4 offset-md-4 mt-5">
+                <a href="{% url 'todolist' %}" class="col-6"><button type="button" class="btn btn-primary btn-lg mt-3 col-12 shadow p-3 text-light">Let's Get Started</button></a>
+                <p class="h5 mb-5 text-dark">New User? <a href="{% url 'register' %}" class="text-dark">Register here</a></p>
+        </center>
 
+    </div>
+    <br>
+    <div class="h6 text-light mt-5 ml-4 mr-4 ">
+        <p><footer>Copyright&copy 2020 Dipti&Purva All rights reserved</footer></p>
     </div>
       
 {% endblock content %}
