@@ -14,9 +14,9 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY='olh@&@5v9r_gxx+lj3&=x0*0^*2kr9-0c3tm3=%7*_e%&$(ns^'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
-ALLOWED_HOSTS = ['taskbudy.herokuapp.com', '127.0.0.1']
+ALLOWED_HOSTS = [False , '127.0.0.1']
 
 
 # Application definition

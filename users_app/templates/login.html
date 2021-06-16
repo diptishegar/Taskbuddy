@@ -25,6 +25,17 @@
             {{ form|crispy }}
             
             <button type="submit" class="btn btn-primary mb-5" data-toggle="button" aria-pressed="false">Login</button>
+            <p class="h5 mb-5" style="color: black">New User? 
+            <style>
+                .reg:link {
+                    color:black;
+                }
+                .reg:hover {
+                    color: darkblue;
+                    text-decoration: none
+                }
+            </style>
+            <a href="{% url 'register' %}" class="reg">Register here</a></p>
         </form>
     </div>
       

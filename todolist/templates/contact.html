@@ -10,11 +10,12 @@
             background: url('{% static 'image/contacts.jpeg' %}') no-repeat center fixed;
             background-size: cover;
 
-        } 
+        }
     </style>  
 {% endblock styles %}
 
 {% block content %} 
+
     <div class="bg-light rounded mt-3 shadow p-2">
         <h3 class="col-md-5 offset-md-2 text-dark">We'd Love To Hear From You</h3>
         
@@ -43,8 +44,17 @@
                 </div>
 
                 <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
-                    <div class="card-body bg-secondary text-white">
-                          9130778787/9156386062
+                    <div class="card-body bg-secondary">
+                        <style type="text/css">
+                            .ahhh:link {
+                                color: white;
+                            }
+                            .ahhh:hover {
+                                color: cyan;
+                                text-decoration: none
+                            }
+                            </style>
+                            <a class="ahhh" href="tel:5554280940" >5554280940</a >
                     </div>
                 </div>
             </div>
