@@ -21,6 +21,14 @@ red meta tags -->
         </button>
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
           <div class="navbar-nav">
+            <br>
+            @media only screen and (max-width: 768px) {
+ 
+  .nav-item {
+               text-align: left;
+              }
+}
+            
             <a class="nav-item nav-link active ml-5" href="{% url 'index' %}">Home</a>
             <a class="nav-item nav-link active ml-2" href="{% url 'todolist' %}">Todolist</a>
             <a class="nav-item nav-link active ml-1" href="{% url 'about' %}">About</a>
