@@ -23,19 +23,14 @@ red meta tags -->
           <div class="navbar-nav">
             <br>
             <style>
-            @media only screen and (max-width: 768px) {
- 
-  #dipti {
-               text-align: left;
-              }
-}
+            
               
             </style>
             
             <a id="dipti" class="nav-item nav-link active ml-5" href="{% url 'index' %}">Home</a>
-            <a id="dipti" class="nav-item nav-link active ml-2" href="{% url 'todolist' %}">Todolist</a>
-            <a id="dipti" class="nav-item nav-link active ml-1" href="{% url 'about' %}">About</a>
-            <a id="dipti" class="nav-item nav-link active ml-2" href="{% url 'contact' %}">Contacts</a>
+            <a id="dipti" class="nav-item nav-link active ml-5" href="{% url 'todolist' %}">Todolist</a>
+            <a id="dipti" class="nav-item nav-link active ml-5" href="{% url 'about' %}">About</a>
+            <a id="dipti" class="nav-item nav-link active ml-5" href="{% url 'contact' %}">Contacts</a>
             {% if user.is_authenticated %}
               <a class="nav-item nav-link active ml-1 text-white" href="{% url 'change-password' %}">Change Password</a> 
             {% endif %}
